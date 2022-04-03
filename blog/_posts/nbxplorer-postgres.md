@@ -1,7 +1,7 @@
 ---
 title: Big improvements in NBXplorer!
 author: NicolasDorier
-date: 2022-04-01
+date: 2022-04-03
 category: features
 tags:
   - "nbxplorer"
@@ -92,6 +92,8 @@ So I created a migration path for our current users. If you use BTCPay on docker
 * For most of our users, the update will be fast, no more than a 1-5 minutes.
 * The migration for the mainnet demo server online since september 2018 is taking around 1H and has only around 44K transactions and 620K addresses.
 * For a few big users (exchanges and big businesses), I expect the migration to take a few more hours.
+
+For those using the docker deployment, you can monitor the migration with `docker logs generated_postgres_1 -f`.
 
 You can see more information on [NBXplorer's migration documentation](https://github.com/dgarage/NBXplorer/tree/master/docs/Postgres-Migration.md).
 
